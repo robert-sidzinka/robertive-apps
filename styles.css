@@ -88,6 +88,33 @@ a:hover { color: var(--ember); }
   color: var(--muted);
 }
 
+/* App list (Robertive home) */
+.apps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin: 0 0 36px;
+}
+.app-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color .15s ease;
+}
+.app-card:hover { border-color: var(--gold); color: var(--text); }
+.app-card .ico { font-size: 40px; line-height: 1; }
+.app-card .meta h3 { margin: 0 0 3px; font-size: 18px; color: var(--gold); }
+.app-card .meta p { margin: 0; font-size: 14px; color: var(--muted); }
+.app-card .arrow { margin-left: auto; color: var(--muted); font-size: 22px; }
+.app-card.soon { opacity: .55; cursor: default; }
+.app-card.soon:hover { border-color: var(--line); }
+
 /* Store note */
 .store {
   text-align: center;
